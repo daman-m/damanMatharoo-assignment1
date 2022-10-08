@@ -1,8 +1,11 @@
 @use "setup";
 @use "header";
+@use "gallery";
 
 $text: #fcfcfc;
-
+$bigFont:'Fredericka the Great', cursive;
+$midFont: 'Cormorant Garamond', serif;
+$lilFont: 'Roboto', sans-serif;
 
 .story {
     display: flex;
@@ -21,7 +24,7 @@ $text: #fcfcfc;
 
                 p {
                     line-height: 29px;
-                    font-family: 'Roboto', sans-serif;
+                    font-family: $lilFont;
                     font-size: 20px;
     
                 }
@@ -39,24 +42,3 @@ $text: #fcfcfc;
 //     border: 1px pink solid;
 // }
 
-.frandsGallery {
-    background-color: #c3d3cb;
-    text-align: center;
-
-        ul {
-            display: flex;
-            margin-top: 90px;
-            justify-content: space-between;
-
-                li {
-                    width:calc((100% / 3) - 20px)
-                }
-        }
-
-}
-
-
-.iconLiving ul {
-    display: flex;
-    
-}

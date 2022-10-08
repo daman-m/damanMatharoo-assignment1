@@ -330,6 +330,29 @@ header h1 {
   right: 30px;
 }
 
+.frandsGallery {
+  background-color: #c3d3cb;
+  text-align: center;
+}
+.frandsGallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 90px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.frandsGallery ul li {
+  width: calc(33.3333333333% - 20px);
+}
+
+.iconLiving ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .story {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -364,27 +387,4 @@ header h1 {
   padding: 10px;
   background-color: #fcfcfc;
   border: 1px solid #fcfcfc;
-}
-
-.frandsGallery {
-  background-color: #c3d3cb;
-  text-align: center;
-}
-.frandsGallery ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 90px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.frandsGallery ul li {
-  width: calc(33.3333333333% - 20px);
-}
-
-.iconLiving ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
