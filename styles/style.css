@@ -228,6 +228,7 @@ html {
 
 html {
   font-size: 125%;
+  background-color: #152d20;
 }
 
 img {
@@ -244,6 +245,13 @@ h1 {
 h2 {
   font-family: "Fredericka the Great", cursive;
   font-size: 2.55rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 2.45rem;
+  text-transform: uppercase;
 }
 
 h1, h2, h3, p, ul {
@@ -260,15 +268,23 @@ a {
   color: inherit;
 }
 
-img {
-  max-width: 100%;
-  display: block;
+section {
+  padding: 100px 0;
 }
 
 .wrapper {
   max-width: 1200px;
   width: 85%;
   margin: 0 auto;
+}
+
+button {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 150px;
+  cursor: pointer;
 }
 
 header {
@@ -312,4 +328,63 @@ header h1 {
   position: absolute;
   bottom: 50px;
   right: 30px;
+}
+
+.story {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fcfcfc;
+}
+.story .imgContainer {
+  width: 30%;
+  margin-right: 35px;
+}
+.story .suzieStory {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.story .suzieStory p {
+  line-height: 29px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.suzieStory button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fcfcfc;
+  border: 1px solid #fcfcfc;
+}
+
+.frandsGallery {
+  background-color: #c3d3cb;
+  text-align: center;
+}
+.frandsGallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 90px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.frandsGallery ul li {
+  width: calc(33.3333333333% - 20px);
+}
+
+.iconLiving ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
