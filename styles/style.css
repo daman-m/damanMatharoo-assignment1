@@ -238,6 +238,7 @@ img {
 h1 {
   font-family: "Fredericka the Great", cursive;
   font-size: 6rem;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -265,7 +266,50 @@ img {
 }
 
 .wrapper {
-  max-width: 1080px;
-  width: 90%;
+  max-width: 1200px;
+  width: 85%;
   margin: 0 auto;
+}
+
+header {
+  background-image: url(../styles/resources/image-1.jpg);
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fcfcfc;
+  position: relative;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
+  padding: 25px 0;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+header nav ul a {
+  padding: 25px 0;
+}
+header h1 {
+  text-align: end;
+  padding-top: 25px;
+}
+
+.socials img {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.socials ul {
+  position: absolute;
+  bottom: 50px;
+  right: 30px;
 }
