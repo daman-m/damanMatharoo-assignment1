@@ -25,7 +25,7 @@ $lilFont: 'Roboto', sans-serif;
                 p {
                     line-height: 29px;
                     font-family: $lilFont;
-                    font-size: 20px;
+                    font-size: 1rem;
     
                 }
         }
@@ -41,4 +41,13 @@ $lilFont: 'Roboto', sans-serif;
 // * {
 //     border: 1px pink solid;
 // }
+section.iconLiving {
+    padding: 50px 0 ;
+        ul {
+            font-family: $midFont;
+            font-size: 1.75rem;
+            color: $text;
+        }
+}
+
 

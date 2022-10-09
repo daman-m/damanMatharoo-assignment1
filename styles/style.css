@@ -330,6 +330,12 @@ header h1 {
   right: 30px;
 }
 
+footer {
+  background-color: black;
+  color: #fcfcfc;
+  text-align: center;
+}
+
 .frandsGallery {
   background-color: #c3d3cb;
   text-align: center;
@@ -351,6 +357,19 @@ header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  margin: 0 40px;
+}
+.iconLiving ul li {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+.iconLiving ul li img {
+  height: 50%;
+  margin: 0 auto;
 }
 
 .story {
@@ -379,7 +398,7 @@ header h1 {
 .story .suzieStory p {
   line-height: 29px;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .suzieStory button {
@@ -387,4 +406,13 @@ header h1 {
   padding: 10px;
   background-color: #fcfcfc;
   border: 1px solid #fcfcfc;
+}
+
+section.iconLiving {
+  padding: 50px 0;
+}
+section.iconLiving ul {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.75rem;
+  color: #fcfcfc;
 }

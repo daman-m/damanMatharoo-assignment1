@@ -16,5 +16,20 @@
 
 .iconLiving ul {
     display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 40px;
+    
+        li {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+
+                img {
+                    height: 50%;
+                    margin: 0 auto;
+
+                }
+        }
     
 }
