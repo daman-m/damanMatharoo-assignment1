@@ -376,6 +376,11 @@ footer {
     height: 50px;
   }
 }
+@media (max-width: 700px) {
+  header {
+    background-position-x: -307px;
+  }
+}
 .frandsGallery {
   background-color: #c3d3cb;
   text-align: center;
@@ -412,6 +417,31 @@ footer {
   margin: 0 auto;
 }
 
+@media (max-width: 700px) {
+  .frandsGallery .cut {
+    display: none;
+  }
+  .frandsGallery ul {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 30px;
+  }
+  .frandsGallery ul li {
+    width: calc(50% - 20px);
+  }
+  .iconLiving ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .story {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -446,10 +476,6 @@ footer {
   padding: 10px;
   background-color: #fcfcfc;
   border: 1px solid #fcfcfc;
-}
-
-* {
-  border: 1px pink solid;
 }
 
 section.iconLiving {
@@ -495,5 +521,11 @@ section.iconLiving ul {
   }
   .story .suzieStory {
     width: 85%;
+  }
+  .story button {
+    margin: 50px auto 0;
+  }
+  .story {
+    padding-bottom: 50px;
   }
 }

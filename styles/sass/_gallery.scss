@@ -33,3 +33,26 @@
         }
     
 }
+// MEDIA QUERIES
+
+@media(max-width:700px) {
+
+    .frandsGallery .cut {
+        display: none;
+    }
+
+    .frandsGallery ul {
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+
+    .frandsGallery ul li {
+        width: calc((100% / 2) - 20px);
+    }
+
+    .iconLiving ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
