@@ -330,12 +330,52 @@ header h1 {
   right: 30px;
 }
 
+.menubar {
+  display: none;
+}
+
 footer {
   background-color: black;
   color: #fcfcfc;
   text-align: center;
 }
 
+@media (max-width: 1430px) {
+  header nav ul {
+    width: 40%;
+  }
+}
+@media (max-width: 1150px) {
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header nav ul {
+    display: inline-block;
+    width: auto;
+  }
+  header h1 {
+    text-align: left;
+    display: inline-block;
+    font-size: 4rem;
+  }
+  header nav li {
+    display: none;
+  }
+  .menubar {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+  }
+}
 .frandsGallery {
   background-color: #c3d3cb;
   text-align: center;
@@ -408,6 +448,10 @@ footer {
   border: 1px solid #fcfcfc;
 }
 
+* {
+  border: 1px pink solid;
+}
+
 section.iconLiving {
   padding: 50px 0;
 }
@@ -415,4 +459,41 @@ section.iconLiving ul {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.75rem;
   color: #fcfcfc;
+}
+
+@media (max-width: 1250px) {
+  .story {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .story .suzieStory {
+    width: 65%;
+  }
+  .story .imgContainer {
+    margin-right: 15px;
+    min-width: 300px;
+  }
+}
+@media (max-width: 1000px) {
+  .story {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .story .imgContainer {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 85%;
+  }
+  .story .suzieStory {
+    width: 85%;
+  }
 }

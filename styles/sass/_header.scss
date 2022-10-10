@@ -18,6 +18,7 @@ header {
 
                 a {
                     padding: 25px 0;
+                    
                 }
         }
         h1 {
@@ -39,6 +40,9 @@ header {
     bottom: 50px;
     right: 30px;
 }
+.menubar {
+    display: none;
+}
 
 
 footer{
@@ -47,4 +51,39 @@ footer{
     text-align: center;
 }
 
- 
+// MEIDA QUIERIES 
+
+@media(max-width:1430px) {
+    header nav ul {
+        width: 40%;
+    }
+}
+
+@media(max-width:1150px) {
+    
+    header nav {
+        display:flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    
+    header nav ul {
+        display:inline-block;
+        width: auto;
+    }
+
+    header h1 {
+        text-align: left;
+        display: inline-block;
+        font-size: 4rem;
+        }
+
+    header nav li {
+        display: none;
+    }
+    .menubar {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+    }
+}

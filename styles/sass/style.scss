@@ -2,6 +2,11 @@
 @use "header";
 @use "gallery";
 
+@mixin fontSize($sizeValue) {
+    font-size: $sizeValue;
+
+}
+
 $text: #fcfcfc;
 $bigFont:'Fredericka the Great', cursive;
 $midFont: 'Cormorant Garamond', serif;
@@ -38,9 +43,9 @@ $lilFont: 'Roboto', sans-serif;
     border: 1px solid $text;
 }
 
-// * {
-//     border: 1px pink solid;
-// }
+* {
+    border: 1px pink solid;
+}
 section.iconLiving {
     padding: 50px 0 ;
         ul {
@@ -50,4 +55,42 @@ section.iconLiving {
         }
 }
 
+//  Media queries
 
+@media(max-width:1250px) {
+    .story {
+        justify-content: space-between;
+    }
+
+   
+    .story .suzieStory {
+        width: 65%;
+    }
+
+    .story .imgContainer {
+        margin-right: 15px;
+        min-width: 300px;
+    }
+}
+
+@media (max-width:1000px) {
+    .story {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .story .imgContainer {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 85%;
+    }
+
+    .story .suzieStory {
+        width: 85%;
+    }
+
+
+    
+}
+
+    
