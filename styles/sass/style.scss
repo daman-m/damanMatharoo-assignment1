@@ -54,6 +54,18 @@ section.iconLiving {
             color: $text;
         }
 }
+footer{
+    background-color: black;
+    color: #fcfcfc;
+    text-align: center;
+    padding: 10px 0;
+        
+        p {
+        font-family: $lilFont;
+    } 
+
+}
+
 
 //  Media queries
 
@@ -97,6 +109,26 @@ section.iconLiving {
         padding-bottom: 50px;
     }
 
+}
+
+@media(max-width: 500px) {
+    header h1,
+    h2,
+    h3 {
+        font-size: 2rem;
+    }
+    .story .suzieStory {
+        width: 100%;
+       
+    }
+    .story .imgContainer {
+        width: 100%;
+    }
+    section.iconLiving,
+    .frandsGallery
+     {
+        padding: 25px 0;
+    }
 }
 
     

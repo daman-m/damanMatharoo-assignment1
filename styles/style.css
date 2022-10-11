@@ -434,9 +434,9 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -487,6 +487,16 @@ section.iconLiving ul {
   color: #fcfcfc;
 }
 
+footer {
+  background-color: black;
+  color: #fcfcfc;
+  text-align: center;
+  padding: 10px 0;
+}
+footer p {
+  font-family: "Roboto", sans-serif;
+}
+
 @media (max-width: 1250px) {
   .story {
     -webkit-box-pack: justify;
@@ -527,5 +537,22 @@ section.iconLiving ul {
   }
   .story {
     padding-bottom: 50px;
+  }
+}
+@media (max-width: 500px) {
+  header h1,
+h2,
+h3 {
+    font-size: 2rem;
+  }
+  .story .suzieStory {
+    width: 100%;
+  }
+  .story .imgContainer {
+    width: 100%;
+  }
+  section.iconLiving,
+.frandsGallery {
+    padding: 25px 0;
   }
 }
