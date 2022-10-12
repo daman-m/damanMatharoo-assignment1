@@ -45,11 +45,6 @@ header {
 }
 
 
-footer{
-    background-color: black;
-    color: #fcfcfc;
-    text-align: center;
-}
 
 // MEIDA QUIERIES 
 
@@ -103,7 +98,11 @@ footer{
     
     header {
         background-position-x: -307px ;
+        height: 60vh;
 
+    }
+    .socials {
+        display: none;
     }
     
 }

@@ -334,12 +334,6 @@ header h1 {
   display: none;
 }
 
-footer {
-  background-color: black;
-  color: #fcfcfc;
-  text-align: center;
-}
-
 @media (max-width: 1430px) {
   header nav ul {
     width: 40%;
@@ -379,6 +373,10 @@ footer {
 @media (max-width: 700px) {
   header {
     background-position-x: -307px;
+    height: 60vh;
+  }
+  .socials {
+    display: none;
   }
 }
 .frandsGallery {
